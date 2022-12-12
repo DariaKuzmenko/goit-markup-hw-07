@@ -158,13 +158,8 @@ body {
   padding-left: 42px;
   outline: transparent;
 }
-
 .modal-input:focus {
   border-color: var(--color-blue);
-}
-
-.modal-input:focus + .input-icon {
-  fill: var(--color-blue);
 }
 
 .input-icon {
@@ -172,6 +167,9 @@ body {
   left: 12px;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+}
+.modal-input:focus + .input-icon {
+  fill: var(--color-blue);
 }
 
 .modal-coment {
@@ -183,6 +181,9 @@ body {
   outline: transparent;
   margin-bottom: 20px;
   padding: 12px 16px;
+}
+.modal-coment:focus {
+  border-color: var(--color-blue);
 }
 
 .modal-input::-webkit-input-placeholder {
@@ -220,10 +221,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-coment:focus {
-  border-color: var(--color-blue);
-}
-
 .check-wrap {
   margin-bottom: 30px;
 }
@@ -250,7 +247,6 @@ body {
   position: relative;
   padding-left: 7px;
 }
-
 .check-link::after {
   content: "";
   width: 100%;
@@ -281,13 +277,11 @@ body {
   -webkit-transition: fill 250ms var(--transformation), background-color 250ms var(--transformation), border-color 250ms var(--transformation);
   transition: fill 250ms var(--transformation), background-color 250ms var(--transformation), border-color 250ms var(--transformation);
 }
-
 .modal-check:checked + .check-text span {
   background-color: var(--color-blue);
   border: none;
   fill: var(--color-white);
 }
-
 .modal-check:focus + .check-text span {
   border-color: var(--color-blue);
 }
@@ -328,13 +322,16 @@ body {
   margin-right: auto;
 }
 
-.header__logo {
+.logo {
   text-decoration: none;
   list-style: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.header__logo {
   color: var(--color-logo);
   margin-right: 93px;
 }
@@ -369,7 +366,13 @@ body {
   transition: color 250ms var(--transformation);
   position: relative;
 }
+.menu__link:hover, .menu__link:focus {
+  color: var(--color-blue);
+}
 
+.current {
+  color: var(--color-blue);
+}
 .current::after {
   content: "";
   display: block;
@@ -381,17 +384,8 @@ body {
   bottom: -1px;
 }
 
-.current {
-  color: var(--color-blue);
-}
-
 .menu__color {
   color: var(--color-uptitle);
-}
-
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--color-blue);
 }
 
 .menu__img {
@@ -604,7 +598,7 @@ body {
 }
 
 .team-soc-link {
-  weight: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   display: -webkit-box;
@@ -620,9 +614,7 @@ body {
   -webkit-transition: fill 250ms var(--transformation), background-color 250ms var(--transformation);
   transition: fill 250ms var(--transformation), background-color 250ms var(--transformation);
 }
-
-.team-soc-link:hover,
-.team-soc-link:focus {
+.team-soc-link:hover, .team-soc-link:focus {
   background-color: var(--color-blue);
   fill: var(--color-white);
 }
@@ -673,9 +665,7 @@ body {
   -webkit-transition: fill 250ms var(--transformation), border 250ms var(--transformation);
   transition: fill 250ms var(--transformation), border 250ms var(--transformation);
 }
-
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border: 1px solid var(--color-blue);
   fill: var(--color-blue);
 }
@@ -708,7 +698,6 @@ body {
 .contacts-item {
   margin-bottom: 9px;
 }
-
 .contacts-item:last-child {
   margin-bottom: 0;
 }
@@ -720,9 +709,7 @@ body {
   -webkit-transition: color 250ms var(--transformation);
   transition: color 250ms var(--transformation);
 }
-
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover, .contacts-link:focus {
   color: var(--color-blue);
 }
 
@@ -774,9 +761,7 @@ body {
   -webkit-transition: background-color 250ms var(--transformation);
   transition: background-color 250ms var(--transformation);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--color-blue);
 }
 
@@ -818,36 +803,31 @@ body {
   padding-left: 16px;
   color: var(--color-white);
 }
-
-.foter-reset::-webkit-input-placeholder {
+.footer-reset::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.foter-reset::-moz-placeholder {
+.footer-reset::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.foter-reset:-ms-input-placeholder {
+.footer-reset:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.foter-reset::-ms-input-placeholder {
+.footer-reset::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.foter-reset::placeholder {
+.footer-reset::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -930,9 +910,7 @@ body {
   transition: color 250ms var(--transformation), background-color 250ms var(--transformation), box-shadow 250ms var(--transformation);
   transition: color 250ms var(--transformation), background-color 250ms var(--transformation), box-shadow 250ms var(--transformation), -webkit-box-shadow 250ms var(--transformation);
 }
-
-.examples-btn:hover,
-.examples-btn:focus {
+.examples-btn:hover, .examples-btn:focus {
   background-color: var(--color-blue);
   color: var(--color-white);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -955,9 +933,7 @@ body {
   transition: box-shadow 250ms var(--transformation);
   transition: box-shadow 250ms var(--transformation), -webkit-box-shadow 250ms var(--transformation);
 }
-
-.examples-link:hover,
-.examples-link:focus {
+.examples-link:hover, .examples-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -965,11 +941,6 @@ body {
 .examples-top-wrap {
   position: relative;
   overflow: hidden;
-}
-
-.examples-item:hover .examples-top-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .examples-top-text {
@@ -988,6 +959,10 @@ body {
   transition: transform 250ms var(--transformation);
   transition: transform 250ms var(--transformation), -webkit-transform 250ms var(--transformation);
   overflow: auto;
+}
+.examples-item:hover .examples-top-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .examples-text {
