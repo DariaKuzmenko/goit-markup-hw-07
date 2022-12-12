@@ -1,10 +1,7 @@
 .team {
     background-color: #f5f4fa;
   }
-  
-  .team-img {
-  }
-  
+ 
   .team-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -71,13 +68,10 @@
     fill: var(--color-icon);
     transition: fill 250ms var(--transformation),
       background-color 250ms var(--transformation);
+      &:hover,
+      &:focus {
+        background-color: var(--color-blue);
+        fill: var(--color-white);
+      }
   }
   
-  .team-soc-icon {
-  }
-  
-  .team-soc-link:hover,
-  .team-soc-link:focus {
-    background-color: var(--color-blue);
-    fill: var(--color-white);
-  }
